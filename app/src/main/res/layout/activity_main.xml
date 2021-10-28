@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.MainActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageMainActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/place_holder"
+        android:foreground="@drawable/image_overlay"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="@string/event_name"
+        android:fontFamily="@font/futura"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="75sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnPhotos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnPhotos"
+        android:layout_width="240dp"
+        android:layout_height="80dp"
+        android:layout_margin="20dp"
+        android:text="@string/photos"
+        android:fontFamily="@font/futura"
+        android:textColor="@color/white"
+        android:textSize="46sp"
+        android:background="@drawable/button_border"
+        android:paddingHorizontal="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnVideos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEvent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnVideos"
+        android:layout_width="240dp"
+        android:layout_height="80dp"
+        android:text="@string/videos"
+        android:fontFamily="@font/futura"
+        android:textColor="@color/white"
+        android:textSize="46sp"
+        android:background="@drawable/button_border"
+        android:paddingHorizontal="20dp"
+        android:layout_margin="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPhotos" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:background="@drawable/hotc"
+        android:layout_margin="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

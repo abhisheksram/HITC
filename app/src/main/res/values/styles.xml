@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MySeekBar" parent="Widget.AppCompat.SeekBar">
+        <item name="android:progressBackgroundTint">@color/Gray</item>
+        <item name="android:progressTint">@color/white</item>
+        <item name="android:thumbTint">@color/white</item>
+        <item name="android:strokeColor">@color/Gray</item>
+    </style>
+
+    <style name="roundedCornersImageView" >
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">10dp</item>
+    </style>
+</resources>
